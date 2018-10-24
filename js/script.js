@@ -56,7 +56,7 @@ for (let i = 0; i < imagesX.length; ++i) {
     // thumbnailsX.innerHTML += '<div class="thumbX"></div>';
 
     let thumbDivX = document.querySelector('.thumbnailsX div:nth-child(' + (i + 1) + ')');
-    thumbDivX.style.backgroundImage = "url('../assets/" + imagesX[i] + "')";
+    thumbDivX.style.backgroundImage = "url('assets/" + imagesX[i] + "')";
 
     // onClick thumbnails X-Team
     thumbDivX.onclick = function() {
