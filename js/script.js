@@ -48,32 +48,34 @@ function autoMotion() {
 for (let i = 0; i < imagesX.length; ++i) {
     let img = new Image();
     img.src = 'assets/' + imagesX[i];
-
-    // load thumbnails images in place X-Team
-    let divX = document.createElement('div');
-    divX.classList = 'thumbX';
-    thumbnailsX.appendChild(divX);
-    // thumbnailsX.innerHTML += '<div class="thumbX"></div>';
-
-    let thumbDivX = document.querySelector('.thumbnailsX div:nth-child(' + (i + 1) + ')');
-    thumbDivX.style.backgroundImage = "url('assets/" + imagesX[i] + "')";
-
-    // onClick thumbnails X-Team
-    thumbDivX.onclick = function() {
-        clearInterval(autoSlideShow);
-        slideIndex = i;
-        changeBgImage();
-    }
 }
 
 // load only first image & caption X-Team
 changeBgImage();
 
 // remove preloaderX and load slideShowX X-Team
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
     preloaderX.style.display = 'none';
     slideShowX.style.display = 'flex';
     this.console.log('All Assets are loaded');
+
+    for (let i = 0; i < imagesX.length; ++i) {
+        // load thumbnails images in place X-Team
+        let divX = document.createElement('div');
+        divX.classList = 'thumbX';
+        thumbnailsX.appendChild(divX);
+        // thumbnailsX.innerHTML += '<div class="thumbX"></div>';
+
+        let thumbDivX = document.querySelector('.thumbnailsX div:nth-child(' + (i + 1) + ')');
+        thumbDivX.style.backgroundImage = "url('assets/" + imagesX[i] + "')";
+
+        // onClick thumbnails X-Team
+        thumbDivX.onclick = function () {
+            clearInterval(autoSlideShow);
+            slideIndex = i;
+            changeBgImage();
+        }
+    }
 });
 
 // autoSlideShow X-Team
