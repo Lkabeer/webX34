@@ -7,7 +7,7 @@ let nextX = document.querySelector('.nextX');
 let prevX = document.querySelector('.prevX');
 
 let imagesX = ["bmw100.jpg", "bmw101.jpg", "bmw102.jpg", "bmw103.jpg", "bmw104.jpg", "bmw105.jpg", "bmw106.jpg"];
-let captionsX = ['BMW blue', 'BMW white', 'BMW 5 Concept', 'BMW blue', 'BMW red', 'BMW red 2', 'programming'];
+let captionsX = ['BMW Blue', 'BMW White', 'BMW 5 Concept', 'BMW Blue', 'BMW Red', 'BMW Red 2', 'X-Team'];
 
 let slideIndex = 0;
 let currentImageX = '';
@@ -57,7 +57,7 @@ changeBgImage();
 window.addEventListener('load', function () {
     preloaderX.style.display = 'none';
     slideShowX.style.display = 'flex';
-    this.console.log('All Assets are loaded');
+    console.log('All Assets are loaded');
 
     for (let i = 0; i < imagesX.length; ++i) {
         // load thumbnails images in place X-Team
@@ -66,11 +66,10 @@ window.addEventListener('load', function () {
         thumbnailsX.appendChild(divX);
         // thumbnailsX.innerHTML += '<div class="thumbX"></div>';
 
-        let thumbDivX = document.querySelector('.thumbnailsX div:nth-child(' + (i + 1) + ')');
-        thumbDivX.style.backgroundImage = "url('assets/" + imagesX[i] + "')";
+        divX.style.backgroundImage = "url('assets/" + imagesX[i] + "')";
 
         // onClick thumbnails X-Team
-        thumbDivX.onclick = function () {
+        divX.onclick = function () {
             clearInterval(autoSlideShow);
             slideIndex = i;
             changeBgImage();
@@ -80,8 +79,3 @@ window.addEventListener('load', function () {
 
 // autoSlideShow X-Team
 autoSlideShow = setInterval(autoMotion, 2500); // Change image every 2.5 seconds
-
-// setTimeout(() => {
-//     preloaderX.style.display = 'none';
-//     slideShowX.style.display = 'block';
-// }, 2000);
