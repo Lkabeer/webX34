@@ -1,4 +1,15 @@
 {
-    "display":      "standalone", 
-    "orientation":  "landscape"
+    "name": "slideShowX",
+    "short_name": "slideShowX",
+    "icons": [{
+            "src": "/assets/favicon.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        }
+    ],
+    "background_color": "#000",
+    "theme_color": "#9e0d0d",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "orientation": "landscape"
 }

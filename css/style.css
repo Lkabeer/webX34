@@ -118,21 +118,11 @@ body {
 /* mobile X-Team */
 @media only screen and (max-width: 768px) {
     .slideShowX {
-        width: 100vh;
-        height: 90vw;
+        width: 100%;
+        height: 90vh;
     }
     .thumbnailsX {
-        width: 100vh;
-        height: 10vw;
-    }
-}
-
-@media all and (orientation: portrait) {
-    body {
-        -webkit-transform: rotate(90deg); 
-        -moz-transform: rotate(90deg); 
-        -ms-transform: rotate(90deg); 
-        -o-transform: rotate(90deg); 
-        transform: rotate(90deg); 
+        width: 100%;
+        height: 10vh;
     }
 }
