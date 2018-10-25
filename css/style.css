@@ -107,6 +107,10 @@ body {
     background-position: center;
 }
 
+.thumbX:hover {
+    opacity: 0.5;
+}
+
 .thumbnailsX div:nth-child(1) {
     background-image: url('../assets/bmw100.jpg');
 }
