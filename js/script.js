@@ -79,3 +79,5 @@ window.addEventListener('load', function () {
 
 // autoSlideShow X-Team
 autoSlideShow = setInterval(autoMotion, 2500); // Change image every 2.5 seconds
+
+window.screen.lockOrientation(landscape);
