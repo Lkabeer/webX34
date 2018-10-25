@@ -7,7 +7,7 @@ let nextX = document.querySelector('.nextX');
 let prevX = document.querySelector('.prevX');
 
 let imagesX = ["bmw100.jpg", "bmw101.jpg", "bmw102.jpg", "bmw103.jpg", "bmw104.jpg", "bmw105.jpg", "bmw106.jpg"];
-let captionsX = ['BMw blue', 'BMW white', 'BMW 5 Concept', 'bmw blue', 'bmw red', 'bmw red 2', 'programming'];
+let captionsX = ['BMW blue', 'BMW white', 'BMW 5 Concept', 'BMW blue', 'BMW red', 'BMW red 2', 'programming'];
 
 let slideIndex = 0;
 let currentImageX = '';

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: fontX;
+    src: url("../assets/KaushanScriptX.ttf"); 
+}
+
 * {
     -webkit-transition: all 0.5s ease-in-out 0s;
     transition: all 0.5s ease-in-out 0s;
@@ -6,7 +11,7 @@
 body {
     margin: 0;
     height: 100vh;
-    font-family: fantasy;
+    font-family: fontX;
 
     display: flex;
     flex-direction: column;
